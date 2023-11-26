@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <div>
+<body class = 'd-flex flex-column min-100-vh'>
+    <header class = 'header'>
         <h1>Weather Dashboard</h1>
-    </div>
+</header>
 
     <div id = 'search-form'>
-        <p>Search your city</p>
+        <h3>Search your city</h3>
         <input id = 'search-input' type = "search">
+        <button type = 'submit' class = 'btn'>Search</button>
+    
+        <h3>Search History</h3>
+    <div id = 'search-history'>
     </div>
+</div>
     <script src = './assets/js/script.js'></script>
 </body>
 </html>
