@@ -27,7 +27,14 @@ function getApiData(city) {
         }).then(function(data) {
             
             for(var i = 0; i <= 5; i++) {
-                
+
+                var forecast = document.querySelector('#forecast-' + (i + 2));
+                var createText = document.createElement('p');
+
+                var humidity = data.list[i*8].main.humidity;
+                var temp = data.list[i*8].main.temp;
+                var windSpeed = data.list[i*8].wind.speed;
+                var date = dayjs(data.list[i*8].dt_text).format('MM/DD/YYYY');
             }
         })
         })
